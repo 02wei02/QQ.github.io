@@ -162,4 +162,7 @@ footer{
         border:none;
         cursor: pointer;
     }
+    .slogan{
+        font-size: 10px;
+    }
 }
