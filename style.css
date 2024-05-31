@@ -3,9 +3,10 @@
     margin: 0;
 }
 header{
-    background-color: #231C1A;
+    background-color: rgb(35, 28, 26,0.8);
     height: 80px;
     width: 100%;
+    position: fixed;
 }
 header ul{
     position: absolute;
@@ -52,6 +53,9 @@ header a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.info h2{
+    margin-top: 50px;
 }
 .info p{
     text-align: center;
@@ -127,6 +131,9 @@ input::focus{
     outline: none;
     border-color: #E0e9a3;
 }
+.menu{
+    display: none;
+}
 footer{
     background-color: #000000;
     color: #b7b7b7;
@@ -135,4 +142,24 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 14px;
+}
+/* 響應式語法 */
+@media screen and (max-width:768px){
+    header ul{
+        display: none;
+    }
+    .news h2{
+        font-size: 30px;
+    }
+    .menu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 36px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border:none;
+        cursor: pointer;
+    }
 }
